@@ -1,0 +1,258 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*ESTILOS DE LA PAGINA*/
+body{
+    background-color: #121212;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: azure;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #D44B38;
+    padding: 20px;
+}
+
+.header__titulo h1{
+    font-size: 40px;
+    padding-top: 15px;
+}
+
+
+.red-social__list{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 1rem;
+}
+
+.red-social__img{
+height: 45px;
+width: 45px;
+margin: 0.2rem;
+    
+}
+
+.contenido__logo{
+width: 90px;
+height: 90px;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenido__menu{
+background-color: #202020 ;
+padding: 0 20px;
+}
+
+.menu__item{
+    margin: 10px 0 10px 0;
+}
+.menu__item:hover{
+    border-top:solid 1px rgb(243, 42, 42);
+    border-bottom:solid 1px rgb(243, 42, 42);
+    width:100%;
+    height: 35px;
+    padding-top: 15px;
+    text-align: center;
+
+}
+.menu__item a{
+    text-decoration: none;
+    color:azure;
+}
+
+.menu__item a:hover{
+color: #D44B38;
+border-bottom: 1px solid D44B385;
+padding: 1em;
+
+}
+.mapa{
+padding-top: 15px;
+}
+
+.contenido__logo:hover{
+    padding: 20px;
+    -webkit-transition: 1.5s;
+    -webkit-transform: rotate(-360deg);
+}
+
+.contenido__main{
+    padding: 20px;
+}
+.fila { 
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+
+
+.contenido-main_casilla{
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.contenido-main__img{
+    width: 100%;
+    height: 900px ;
+    border-radius: 35px;
+}
+
+.barradenavegacion{
+    background-color: rgb(211, 211, 211);
+}
+
+.carta {
+    margin: 16px;
+}
+
+.carta__foto{
+    border-radius: 30px;
+}
+
+/* ESTILOS ACORDION SOBRE NOSOTROS*/
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  /*estilo de historia*/
+  .contenido__main{
+    position: relative;
+    max-width: 100%; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .contenido__main .contenido-main__texto{
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 40px; /* Some padding */
+  }
+
+  .samurai{
+      border-radius: 20%;
+  }
+
+  .contenido-main__titulo{
+    font-size: 30px;
+  }
+  
+
+  footer{
+    background-color: #202020;
+    height: 300px;
+    display:flex;
+    margin:auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .contenido-footer__logo{
+    width: 90px;
+    height: 90px;
+    padding-top: 25px;
+    display:block;
+    margin:auto;
+  }
+
+  .contenido-footer__logo:hover{
+      padding: 20px;
+    -webkit-transition: 1.5s;
+    -webkit-transform: rotate(-360deg);
+  }
+
+
+.red-social__footer{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 1rem;
+
+}
