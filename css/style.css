@@ -83,11 +83,18 @@ margin: 0.2rem;
     
 }
 
-.contenido__logo{
-width: 90px;
-height: 90px;
-margin: 20px 0 20px 0;
+.logo__img{
+    margin: 20px 0 20px 0;
+    width: 90px;
+    height: 90px;
 }
+
+.logo__img:hover{
+    padding: 20px;
+    -webkit-transition: 1.5s;
+    -webkit-transform: rotate(-360deg);
+}
+
 
 .contenido{
     display: flex;
@@ -125,12 +132,6 @@ padding: 1em;
 }
 .mapa{
 padding-top: 15px;
-}
-
-.contenido__logo:hover{
-    padding: 20px;
-    -webkit-transition: 1.5s;
-    -webkit-transform: rotate(-360deg);
 }
 
 .contenido__main{
