@@ -86,10 +86,8 @@ margin: 0.2rem;
 .contenido__logo{
 width: 90px;
 height: 90px;
-padding-bottom: 20px;
-padding-top: 20px;
+margin: 20px 0 20px 0;
 }
-
 
 .contenido{
     display: flex;
@@ -255,4 +253,8 @@ padding-top: 15px;
     list-style-type: none;
     margin: 1rem;
 
+}
+
+.carousel-img {
+    height: 600px;
 }
